@@ -21,14 +21,7 @@ nav a{
     font-size: 20px;
 }
 
-nav a:hover {
-    background-color: #555;
-    opacity: inherit;
-}
-nav:hover{
-    background-color: #000;
-    opacity: inherit;
-}
+
 header{
     height: 670px;
     background-image: url("img/close-up.jpg");
@@ -48,4 +41,8 @@ header{
     width: 15%;
     margin-top: 10%;
     margin-left: 45%;
+}
+
+h1{
+    text-align: center;
 }
