@@ -54,24 +54,31 @@ header{
 
 #menu{
     background-color: black;
-
+    padding-top: 10px;
 }
 
 .tab{
-    /* overflow: hidden; */
-   
+    overflow: hidden;   
     border: 1px solid darkgray;
     background-color: black;
+    max-width: 60%;
+    margin: auto;
+    padding: 14px;
+    display: flex;
 }
 
 .tab button{
     background-color: inherit;
     color: white;
+    font-size: 20px;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    margin: -15px;
+    padding: 24px;
     transition: 0.3s;
+    width: 100%;
+   
 }
 
 .tab button:hover{
@@ -85,7 +92,9 @@ header{
 .tabcontent{
     display: none;
     background-color: white;
-    padding: 6px 12px;
+    padding: 14px;
     border: 1px solid darkgray;
     border-top: none;
+    max-width: 60%;
+    margin: auto;
 }
