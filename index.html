@@ -19,8 +19,101 @@
         </header>
         <section>
             <div id="menu">
-                <h1>THE MENU</h1>
+                <h1 style="color: white; text-align: center;">THE MENU</h1>
+                <!--tab links-->
+                <div class="tab">
+                    <button id="myButton" class="tablinks" onclick="openMenu(event,'Pizza')">PIZZA</button> 
+                    <button class="tablinks" onclick="openMenu(event,'Pasta')">SALADS</button> 
+                    <button class="tablinks" onclick="openMenu(event,'Starter')">STARTER</button> 
+                </div>
+                <!--Tab Content Pizza-->
+                <div id="Pizza" class="tabcontent" >
+                    <h1><b>Margherita</b> <span class="">$12.50</span></h1>
+                    <p class="">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                    <hr>
+                 
+                    <h1><b>Formaggio</b> <span class="">$15.50</span></h1>
+                    <p class="">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                    <hr>
+                    
+                    <h1><b>Chicken</b> <span class="">$17.00</span></h1>
+                    <p class="">Fresh tomatoes, mozzarella, chicken, onions</p>
+                    <hr>
+              
+                    <h1><b>Pineapple'o'clock</b> <span class="">$16.50</span></h1>
+                    <p class="">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                    <hr>
+              
+                    <h1><b>Meat Town</b> <span class="">Hot!</span><span class="">$20.00</span></h1>
+                    <p class="">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                    <hr>
+              
+                    <h1><b>Parma</b> <span class="">New</span><span class="">$21.50</span></h1>
+                    <p class="">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+                </div>
+
+                <!--Tab Content Pasta-->
+                <div id="Pasta"class="tabcontent">
+                    <h1><b>Lasagna</b> <span class="">Popular</span> <span class="">$13.50</span></h1>
+                    <p class="">Special sauce, mozzarella, parmesan, ground beef</p>
+                    <hr>
+                
+                    <h1><b>Ravioli</b> <span class="">$14.50</span></h1>
+                    <p class="">Ravioli filled with cheese</p>
+                    <hr>
+                    
+                    <h1><b>Spaghetti Classica</b> <span class="">$11.00</span></h1>
+                    <p class="">Fresh tomatoes, onions, ground beef</p>
+                    <hr>
+
+                    <h1><b>Seafood pasta</b> <span class= "">$25.50</span></h1>
+                    <p class="">Salmon, shrimp, lobster, garlic</p>
+                </div>
+
+                <!--Tab Content Starter-->
+                <div id="Starter" class="tabcontent">
+                    <h1><b>Today's Soup</b> <span  class="">Seasonal</span><span class= "">$5.50</span></h1>
+                    <p class="">Ask the waiter</p>
+                    <hr>
+                 
+                    <h1><b>Bruschetta</b> <span class= "">$8.50</span></h1>
+                    <p class="">Bread with pesto, tomatoes, onion, garlic</p>
+                    <hr>
+                    
+                    <h1><b>Garlic bread</b> <span class= "">$9.50</span></h1>
+                    <p class="">Grilled ciabatta, garlic butter, onions</p>
+                    <hr>
+                    
+                    <h1><b>Tomozzarella</b> <span class= "">$10.50</span></h1>
+                    <p class="">Tomatoes and mozzarella</p>
+              
+                </div>
             </div>
         </section>
+        <script >
+            function openMenu(evt, menuName){
+               
+    var i, tabcontent, tablinks;
+    
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName('tabcontent');
+    for(i=0; i<tabcontent.length;i++)
+    {
+        tabcontent[i].style.display = 'none';
+    }
+    
+    // Get all elements with class="tablinks" and remove the class "active"
+   tablinks = document.getElementsByClassName('tablinks');
+    for(i = 0; i < tablinks.length; i++){
+        tablinks[i].className = tablinks[i].className.replace(" active","");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+     document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+document.getElementById("myButton").click();
+        </script>
     </body>
 </html>
