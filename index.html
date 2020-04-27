@@ -17,6 +17,111 @@
                 ALBERT PIZZA
             </div>
         </header>
-        
+        <section>
+            <div id="menu">
+                <h1 style="color: white; text-align: center;">THE MENU</h1>
+                <!--tab links-->
+                <div class="tab">
+                    <button id="myButton" class="tablinks" onclick="openMenu(event,'Pizza')">PIZZA</button> 
+                    <button class="tablinks" onclick="openMenu(event,'Pasta')">SALADS</button> 
+                    <button class="tablinks" onclick="openMenu(event,'Starter')">STARTER</button> 
+                </div>
+                <!--Tab Content Pizza-->
+                <div id="Pizza" class="tabcontent" >
+                    <h1><b>Margherita</b> <span class="">$12.50</span></h1>
+                    <p class="">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                    <hr>
+                 
+                    <h1><b>Formaggio</b> <span class="">$15.50</span></h1>
+                    <p class="">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                    <hr>
+                    
+                    <h1><b>Chicken</b> <span class="">$17.00</span></h1>
+                    <p class="">Fresh tomatoes, mozzarella, chicken, onions</p>
+                    <hr>
+              
+                    <h1><b>Pineapple'o'clock</b> <span class="">$16.50</span></h1>
+                    <p class="">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                    <hr>
+              
+                    <h1><b>Meat Town</b> <span class="">Hot!</span><span class="">$20.00</span></h1>
+                    <p class="">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                    <hr>
+              
+                    <h1><b>Parma</b> <span class="">New</span><span class="">$21.50</span></h1>
+                    <p class="">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+                </div>
+
+                <!--Tab Content Pasta-->
+                <div id="Pasta"class="tabcontent">
+                    <h1><b>Lasagna</b> <span class="">Popular</span> <span class="">$13.50</span></h1>
+                    <p class="">Special sauce, mozzarella, parmesan, ground beef</p>
+                    <hr>
+                
+                    <h1><b>Ravioli</b> <span class="">$14.50</span></h1>
+                    <p class="">Ravioli filled with cheese</p>
+                    <hr>
+                    
+                    <h1><b>Spaghetti Classica</b> <span class="">$11.00</span></h1>
+                    <p class="">Fresh tomatoes, onions, ground beef</p>
+                    <hr>
+
+                    <h1><b>Seafood pasta</b> <span class= "">$25.50</span></h1>
+                    <p class="">Salmon, shrimp, lobster, garlic</p>
+                </div>
+
+                <!--Tab Content Starter-->
+                <div id="Starter" class="tabcontent">
+                    <h1><b>Today's Soup</b> <span  class="">Seasonal</span><span class= "">$5.50</span></h1>
+                    <p class="">Ask the waiter</p>
+                    <hr>
+                 
+                    <h1><b>Bruschetta</b> <span class= "">$8.50</span></h1>
+                    <p class="">Bread with pesto, tomatoes, onion, garlic</p>
+                    <hr>
+                    
+                    <h1><b>Garlic bread</b> <span class= "">$9.50</span></h1>
+                    <p class="">Grilled ciabatta, garlic butter, onions</p>
+                    <hr>
+                    
+                    <h1><b>Tomozzarella</b> <span class= "">$10.50</span></h1>
+                    <p class="">Tomatoes and mozzarella</p>
+              
+                </div>
+            </div>
+            
+            <!-- About container-->
+            <div id="about">
+                <h1 style="margin-bottom: 64px;"> About </h1>
+                <p>The Albert Pizza was founded in blabla by Mr. Albert in lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat.
+                </p>
+
+                <div class="about-chef">
+                    <p><strong>The Chef?</strong> Mr. Albert himself</p>
+                    <img src="./src/img/chef.jpg" alt="Chef" id="img-chef"/>
+                </div>
+
+                <p>We are proud of our interiors.</p>
+                <img src="./src/img/onepage_restaurant.jpg"  style="width:100%" alt="Restaurant" />
+
+                <h1><b>Opening Hours</b></h1>
+                <div class="openings-hours">
+                    <div>
+                        <p>Mon & Tue CLOSED</p>
+                        <p>Wednesday 10.00 - 24.00</p>
+                        <p>Thursday 10:00 - 24:00</p>
+                    </div>
+                    <div>
+                        <p>Friday 10:00 - 12:00</p>
+                        <p>Saturday 10:00 - 23:00</p>
+                        <p>Sunday Closed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="src/menu.js"></script>
     </body>
 </html>

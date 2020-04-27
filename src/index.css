@@ -12,6 +12,14 @@ nav{
     /* top: 0;  */
 }
 
+nav:hover{
+    opacity: inherit;
+}
+
+nav a:hover{
+    opacity: inherit;
+    background-color: #555;
+}
 nav a{
     float: left;
     text-align: center;
@@ -31,18 +39,89 @@ header{
     /* background-color: yellow; */
 }
 
+/* Menu */
 #pizza-name{
-    background-color: black;
+    text-align: center;
+    background-color: rgb(20, 16, 16);
     opacity: 0.7;
     color: white;
+    width: 20%;
     padding: 2%;
-    text-align: center;
-    font-size: 170%;
-    width: 15%;
+    font-size: 25px;
     margin-top: 10%;
-    margin-left: 45%;
+    margin-left: 43%;
 }
 
-h1{
+
+
+#menu{
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;   
+}
+
+.tab{
+    overflow: hidden;   
+    border: 1px solid darkgray;
+    background-color: black;
+    max-width: 60%;
+    margin: auto;
+    padding: 14px;
+    display: flex;
+}
+
+.tab button{
+    background-color: inherit;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: -15px;
+    padding: 24px;
+    transition: 0.3s;
+    width: 100%;
+   
+}
+
+.tab button:hover{
+    background-color: tomato;
+}
+
+.tab button.active{
+    background-color: tomato;
+}
+
+.tabcontent{
+    display: none;
+    background-color: white;
+    padding: 14px;
+    border: 1px solid darkgray;
+    border-top: none;
+    max-width: 60%;
+    margin: auto;
+}
+
+/* About */
+#about{
+    background-color:#993333;
     text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 8%;
+}
+
+.about-chef{
+    display: flex;
+    justify-content: space-between;
+}
+
+#img-chef{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.openings-hours{
+    display: flex;
+    justify-content: space-around;
 }
