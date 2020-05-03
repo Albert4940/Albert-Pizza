@@ -6,20 +6,14 @@ nav{
     width: 100%;
     background-color: #000;
     opacity: 0.7;
-<<<<<<< HEAD
      overflow: auto;
-     position:fixed; 
-     z-index: 10;
-     top: 0; 
-=======
-    overflow: auto;
-    position:fixed;
+     position: fixed; 
      z-index: 1;
-     top: 0;
-
->>>>>>> contact-branch
+     top: 0; 
 }
-
+header{
+    margin-bottom: -10px;
+}
 nav:hover{
     opacity: inherit;
 }
@@ -38,17 +32,18 @@ nav a{
 }
 
 
-header{
-    margin-top: 0;
-    height: 700px;
+#ban{
+   /* margin-top: -140px;*/
+    height: 900px;
     background-image: url("img/close-up.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* background-color: yellow; */
+    
 }
 
-/* Menu */
+/* Ban */
 #pizza-name{
     text-align: center;
     background-color: rgb(20, 16, 16);
@@ -57,12 +52,13 @@ header{
     width: 20%;
     padding: 2%;
     font-size: 25px;
-    margin-top: 10%;
-    margin-left: 43%;
+    margin: auto;
+    position: relative;
+    top: 300px;
 }
 
 
-
+/* Menu */
 #menu{
     background-color: black;
     padding-top: 20px;
